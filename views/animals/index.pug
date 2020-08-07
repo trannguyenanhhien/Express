@@ -1,0 +1,23 @@
+extends ../layouts/common.pug
+
+block content
+  h1 Animals
+    a(href='/animals/create').btn.btn-primary.my-2.ml-3 Create
+  form(action='/animals/search', method='GET', class='d-flex').form-inline.my-2.my-lg-2
+    input.form-control.mr-sm-2(type='search', placeholder='Search')
+    button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search  
+  
+  table.table
+    tr
+      th ID
+      th Name
+      th Color
+      th Option
+
+    each animal in animals
+      tr
+        td= animal.id
+        td= animal.name
+        td= animal.color
+        td
+          a(href='/animals/' + animal.id).btn.btn-light View

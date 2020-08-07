@@ -1,0 +1,14 @@
+{
+  "animals": [
+    {
+      "name": "Hawk",
+      "color": "Gray",
+      "id": "GALaOnKI3"
+    },
+    {
+      "name": "Dog",
+      "color": "Yellow",
+      "id": "djZ8yW6sY"
+    }
+  ]
+}
